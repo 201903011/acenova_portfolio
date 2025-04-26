@@ -1,0 +1,17 @@
+{
+    // ✅ Enable TypeScript validation
+    "typescript.validate.enable": true,
+    // ✅ Enable TypeScript server diagnostics for all project files
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+    // ✅ Associate .ts and .tsx files with TypeScript and React
+    "files.associations": {
+        "*.ts": "typescript",
+        "*.tsx": "typescriptreact"
+    },
+    // ✅ Optimize TypeScript server for large projects
+    "typescript.tsserver.watchOptions": {
+        "watchFile": "useFsEventsOnParentDirectory",
+        "watchDirectory": "useFsEvents",
+        "fallbackPolling": "dynamicPriorityPolling"
+    },
+}

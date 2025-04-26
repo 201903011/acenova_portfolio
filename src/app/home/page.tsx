@@ -1,4 +1,6 @@
+import Navigation from '@/components/navbar';
 import HomeHero from '@/sections/home/home_hero';
+import { Button } from 'flowbite-react';
 import Head from 'next/head';
 
 export const metadata = {
@@ -40,12 +42,11 @@ export const metadata = {
     },
 };
 
+
 export default function HomePage() {
     return (
         <>
-
             <HomeHero />
-
         </>
     );
 }
