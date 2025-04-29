@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/navbar";
-import { Flowbite } from "flowbite-react";
+import { Flowbite, Footer } from "flowbite-react";
 import { Head } from "next/document";
 import { use } from "react";
 import { cookies } from "next/headers";
+import AppFooter from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -123,9 +124,10 @@ export default async function RootLayout({
         >
 
           <Navigation />
-          <div className="bg-white dark:bg-gray-900">
+          <div className="min-h-screen bg-white dark:bg-gray-900">
             {children}
           </div>
+          <AppFooter />
         </Flowbite>
 
       </body>

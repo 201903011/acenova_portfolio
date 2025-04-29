@@ -1,15 +1,17 @@
 import { Button } from "flowbite-react";
 import Image from "next/image";
 import type { FC } from "react";
-
+import { heroData as data } from "@/data/homepage";
 
 const HomeHero: FC = function () {
+
+
     return (
         <section className="bg-white dark:bg-gray-900">
             <div className="mb-4 flex justify-center lg:hidden">
                 <Image
-                    src="/images/john.png" // <- make sure you have this in /public/images/
-                    alt="Avatar"
+                    src={data.avatarSrc}
+                    alt={data.imageAlt}
                     width={100}
                     height={100}
                     className="rounded-full"
@@ -17,20 +19,17 @@ const HomeHero: FC = function () {
             </div>
             <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
                 <div className="mr-auto place-self-center lg:col-span-7">
-
-                    <h4 className="mb-4 max-w-2xl text-4xl font-bold leading-none tracking-tight dark:text-white md:text-2xl xl:text-2xl">
+                    <h4 className="mb-4 max-w-2xl text-2xl text-gray-600 font-bold leading-none tracking-tight dark:text-gray-400 md:text-xl xl:text-2xl">
                         Hi, I'm 👋
                     </h4>
-                    <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
-                        Robert Downey
+                    <h1 className="mb-4 max-w-2xl text-4xl font-bold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+                        {data.name}
                     </h1>
-                    <h3 className="mb-4 max-w-2xl text-4xl font-bold leading-none tracking-tight dark:text-white md:text-xl xl:text-xl">
-                        Full Stack Developer | Designer | Freelancer | 2yrs+ Experience
+                    <h3 className="mb-4 max-w-2xl text-xl text-gray-600 font-bold leading-none tracking-tight dark:text-gray-400 md:text-xl xl:text-xl">
+                        {data.title}
                     </h3>
-
                     <p className="mb-6 max-w-2xl text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-                        My goal is to explore computer science and engineering thoroughly, aiming to build a career in both DevOps and
-                        Development.
+                        {data.description}
                     </p>
                     <div className="flex w-fit items-center gap-5">
                         <Button color="info" href="/projects" size="lg" className="[&>span]:items-center">
@@ -48,16 +47,13 @@ const HomeHero: FC = function () {
                                 />
                             </svg>
                         </Button>
-                        <Button color="gray" outline size="lg" href="/contact" >
+                        <Button color="gray" outline size="lg" href="/contact">
                             Contact Me
                         </Button>
                     </div>
                 </div>
                 <div className="hidden lg:col-span-5 lg:mt-0 lg:flex">
-                    <img
-                        src="/images/john.png"
-                        alt="mockup"
-                    />
+                    <img src={data.avatarSrc} alt={data.imageAlt} />
                 </div>
             </div>
         </section>

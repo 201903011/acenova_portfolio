@@ -6,7 +6,6 @@ import type { FC } from "react";
 const HomeExperience: FC = function () {
     return (
         <>
-        
         </>
     );
 };

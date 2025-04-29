@@ -1,32 +1,31 @@
 import { Button } from "flowbite-react";
 import type { FC } from "react";
+import { aboutData as data } from "@/data/homepage";
 
 const HomeAbout: FC = function () {
+
     return (
         <section className="bg-white dark:bg-gray-900">
             <div className="mx-auto max-w-screen-xl items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16">
                 <img
-                    alt=""
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
+                    alt="Dashboard Light"
+                    src={data.lightImage}
                     className="w-full dark:hidden"
                 />
                 <img
-                    alt=""
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+                    alt="Dashboard Dark"
+                    src={data.darkImage}
                     className="hidden w-full dark:block"
                 />
                 <div className="mt-4 md:mt-0">
                     <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                        Let's know something more About me.
+                        {data.heading}
                     </h2>
                     <p className="mb-6 text-gray-500 dark:text-gray-400 md:text-lg">
-                        I am a passionate software engineer with a strong background in web development and a keen interest in
-                        learning new technologies. I have experience in building scalable applications and enjoy solving
-                        complex problems. My goal is to create efficient and user-friendly solutions that make a positive
-                        impact.
+                        {data.description}
                     </p>
-                    <Button color="info" href="#" className="w-fit [&>span]:items-center">
-                        About me
+                    <Button color="info" href={data.buttonLink} className="w-fit [&>span]:items-center">
+                        {data.buttonLabel}
                         <svg
                             className="-mr-1 ml-2 h-4 w-4"
                             fill="currentColor"
