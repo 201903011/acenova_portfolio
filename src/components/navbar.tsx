@@ -4,8 +4,9 @@ import { navLinks } from "@/data/navlink";
 import { Button, DarkThemeToggle, Navbar, } from "flowbite-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FC } from "react";
 
-export default function Navigation() {
+const Navigation: FC = function () {
 
     const pathname = usePathname();
 
@@ -49,3 +50,4 @@ export default function Navigation() {
 }
 
 
+export default Navigation;

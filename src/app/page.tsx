@@ -1,4 +1,6 @@
 import HomeHero from '@/sections/home/home_hero';
+import MainHome from '@/sections/home/main_home';
+import { Main } from 'next/document';
 import Head from 'next/head';
 
 export const metadata = {
@@ -43,9 +45,7 @@ export const metadata = {
 export default function HomePage() {
     return (
         <>
-
-            <HomeHero />
-
+            <MainHome />
         </>
     );
 }

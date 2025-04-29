@@ -1,5 +1,6 @@
 import Navigation from '@/components/navbar';
 import HomeHero from '@/sections/home/home_hero';
+import MainHome from '@/sections/home/main_home';
 import { Button } from 'flowbite-react';
 import Head from 'next/head';
 
@@ -46,7 +47,7 @@ export const metadata = {
 export default function HomePage() {
     return (
         <>
-            <HomeHero />
+            <MainHome />
         </>
     );
 }
