@@ -1,10 +1,13 @@
 import Navigation from '@/components/navbar';
+import AboutEducationSection from '@/sections/about/about_education';
+import AboutHeroSection from '@/sections/about/about_hero';
 import { Button } from 'flowbite-react';
 
 export default function AboutPage() {
     return (
-        <section>
-            <h1 className="text-5xl font-bold text-center py-20">About AceNova DevOps</h1>
+        <section className="">
+            <AboutHeroSection />
+            <AboutEducationSection />
         </section>
     );
 }

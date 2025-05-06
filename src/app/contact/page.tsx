@@ -1,10 +1,11 @@
 import Navigation from '@/components/navbar';
+import ContactFormSection from '@/sections/contact/contact_form_section';
 import { Button } from 'flowbite-react';
 
 export default function ContactPage() {
     return (
         <section>
-            <h1 className="text-5xl font-bold text-center py-20">Contact AceNova DevOps</h1>
+            <ContactFormSection />
         </section>
     );
 }
