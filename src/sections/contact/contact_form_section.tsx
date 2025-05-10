@@ -19,11 +19,11 @@ const ContactFormSection: FC = function () {
                 >
                     <div className="grid grid-cols-1 gap-2">
                         <Label htmlFor="first-name" className="dark:text-white">First name</Label>
-                        <TextInput id="first-name" placeholder="Bonnie" required />
+                        <TextInput id="first-name" placeholder="John" required />
                     </div>
                     <div className="grid grid-cols-1 gap-2">
                         <Label htmlFor="last-name" className="dark:text-white">Last name</Label>
-                        <TextInput id="last-name" placeholder="Green" required />
+                        <TextInput id="last-name" placeholder="Doe" required />
                     </div>
                     <div className="grid grid-cols-1 gap-2">
                         <Label htmlFor="email" className="dark:text-white">Your email</Label>

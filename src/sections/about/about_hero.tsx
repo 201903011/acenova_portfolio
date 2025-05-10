@@ -1,7 +1,7 @@
 import { Button } from "flowbite-react";
 import { FC } from "react";
 import { FaArrowRight, FaUser, FaTools } from "react-icons/fa";
-import aboutData from "../../data/about_data.json";
+import { aboutData } from "../../data/about_data";
 
 const AboutHeroSection: FC = function () {
     return (

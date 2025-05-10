@@ -4,7 +4,7 @@ import { FaMagnifyingGlassChart, FaMobileScreen } from "react-icons/fa6";
 
 
 export const heroData = {
-    name: "Robert Downey",
+    name: "Rahul Gaikwad",
     title: "Full Stack Developer | DevOps | Freelancer | 2yrs+ Experience",
     description:
         "My goal is to explore computer science and engineering thoroughly, aiming to build a career in both DevOps and Development.",
@@ -18,8 +18,8 @@ export const aboutData = {
         "I am a passionate software engineer with a strong background in web development and a keen interest in learning new technologies. I have experience in building scalable applications and enjoy solving complex problems. My goal is to create efficient and user-friendly solutions that make a positive impact.",
     buttonLabel: "About me",
     buttonLink: "/about",
-    lightImage: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg",
-    darkImage: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg",
+    lightImage: "/svg/aboutme.svg",
+    darkImage: "/svg/aboutme.svg",
 };
 
 export const skills = [
@@ -53,19 +53,19 @@ export const projects = [
     {
         title: "AlRamz",
         description:
-            "Plan it, create it, launch it. Collaborate seamlessly with the entire organization and hit your marketing goals every month.",
+            "Stock app for UAE market with SpringBoot, CI/CD via Jenkins & Docker, IaC using Terraform, Arabic UI, and Ansible for config management.",
         icon: FaChartLine,
     },
     {
         title: "Motilal Oswal",
         description:
-            "Protect your organization, devices, and stay compliant with structured workflows and custom permissions tailored for you.",
+            "Built stock research app with Go & Flutter, CI/CD, Terraform, Docker, CleverTap, theming, OFS, BuyBack, and 2FA for secure access.",
         icon: FaMagnifyingGlassChart,
     },
     {
         title: "BioFuels Junction",
         description:
-            "Auto-assign tasks, send Slack messages, and much more. Now power up with hundreds of new templates to get started quickly.",
+            "Built supply chain system with Zoho DB sync and role based accessed transaction flows for streamlined supply chain operations.",
         icon: FaIndustry,
     }
 
@@ -77,13 +77,13 @@ export const contactItems = [
     {
         icon: FaEnvelope,
         title: "Email us:",
-        value: "hello@flowbite.com",
-        href: "mailto:hello@flowbite.com",
+        value: "rahulkishorgaikwad@gmail.com",
+        href: "mailto:rahulkishorgaikwad@gmail.com",
     },
     {
         icon: FaPhoneAlt,
         title: "Call us:",
-        value: "+91 98765 98765",
-        href: "tel:+919876576543",
+        value: "+91 97028 16011",
+        href: "tel:+919702816011",
     },
 ];

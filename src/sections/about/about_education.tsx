@@ -8,7 +8,7 @@ import { Timeline } from "flowbite-react";
 const AboutEducationSection: FC = function () {
     return (
         <section className=" dark:bg-gray-900 antialiased">
-            <div className="bg-gray-50 dark:bg-gray-800 mt-12 lg:mt-16 lg:px-6 sm:py-10 lg:py-10">
+            <div className="bg-gray-50 dark:bg-gray-800 mt-12 lg:mt-16 px-3 lg:px-6  sm:py-10 lg:py-10 py-8">
                 <h2 className="text-3xl font-bold leading-tight tracking-tight text-gray-800 dark:text-white sm:text-4xl pb-10">
                     Education
                 </h2>
