@@ -50,7 +50,7 @@ export default function SkillsPage() {
                         <div className="flex flex-col items-center">
                             <img
                                 className="mx-auto h-12 w-auto object-contain"
-                                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/customers/stripe.svg"
+                                src= {skill.image}
                                 alt="Stripe logo"
                             />
                             <p className="mt-2.5 text-base text-gray-700 dark:text-gray-300">
