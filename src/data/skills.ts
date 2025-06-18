@@ -1,43 +1,31 @@
-// export const categories = ['Frontend', 'Backend', 'Mobile', 'DevOps', 'Design', 'Soft Skills', 'NewSk'] as const;
-// export type Category = (typeof categories)[number];
-
-export const skills: Record<any, { name: string; image: string; level: string }[]> = {
-    DevOps: [
-        { name: 'Docker', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-        { name: 'Kubernetes', image: '/images/skills/icn-react-native.png', level: 'Beginner' },
-        { name: 'Azure', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-        { name: 'CI/CD', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-        { name: 'Terraform', image: '/images/skills/icn-react-native.png', level: 'Beginner' },
-    ],
-    Backend: [
-        { name: 'Node.js', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-        { name: 'Express', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-        { name: 'Python', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-        { name: 'Django', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-        { name: 'SQL', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-    ],
-     Mobile: [
-        { name: 'React Native', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-        { name: 'Flutter', image: '/images/skills/icn-react-native.png', level: 'Beginner' },
-        { name: 'Swift', image: '/images/skills/icn-react-native.png', level: 'Beginner' },
-        { name: 'Kotlin', image: '/images/skills/icn-react-native.png', level: 'Beginner' },
-    ],
-    Frontend: [
-        { name: 'React', image: '/images/skills/icn-react-native.png', level: 'Advanced', },
-        { name: 'Next.js', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-        { name: 'HTML', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-        { name: 'CSS', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-        { name: 'JavaScript', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-    ],
-    Design: [
-        { name: 'Figma', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
-    ],
-    'Soft Skills': [
-        { name: 'Communication', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-        { name: 'Problem Solving', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-        { name: 'Teamwork', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-        { name: 'Adaptability', image: '/images/skills/icn-react-native.png', level: 'Advanced' },
-    ],
-
-
+export const skills = {
+  DevOps: [
+    { name: 'Docker', image: '/images/skills/icn-docker.png', level: 'Intermediate' },
+    { name: 'Kubernetes', image: '/images/skills/icn-kubernetes.png', level: 'Intermediate' },
+    { name: 'Terraform', image: '/images/skills/icn-terraform.png', level: 'Intermediate' },
+    { name: 'Ansible', image: '/images/skills/icn-ansible.png', level: 'Intermediate' },
+    { name: 'Jenkins', image: '/images/skills/icn-jenkins.png', level: 'Intermediate' },
+    { name: 'Prometheus', image: '/images/skills/icn-prometheus.png', level: 'Beginner' },
+    { name: 'Grafana', image: '/images/skills/icn-grafana.png', level: 'Beginner' },
+    { name: 'Git', image: '/images/skills/icn-git.png', level: 'Advanced' },
+  ],
+  Cloud: [
+    { name: 'AWS', image: '/images/skills/icn-aws.png', level: 'Intermediate' },
+    { name: 'Azure', image: '/images/skills/icn-azure.png', level: 'Beginner' },
+    { name: 'GCP', image: '/images/skills/icn-gcp.png', level: 'Beginner' },
+  ],
+  Mobile: [
+    { name: 'Android', image: '/images/skills/icn-android.png', level: 'Intermediate' },
+    { name: 'iOS', image: '/images/skills/icn-ios.png', level: 'Beginner' },
+    { name: 'Flutter', image: '/images/skills/icn-flutter.png', level: 'Intermediate' },
+    { name: 'React Native', image: '/images/skills/icn-react-native.png', level: 'Intermediate' },
+  ],
+  Backend: [
+    { name: 'Java', image: '/images/skills/icn-java.png', level: 'Advanced' },
+    { name: 'Java 8', image: '/images/skills/icn-java-8.png', level: 'Advanced' },
+    { name: 'JavaScript', image: '/images/skills/icn-javascript.png', level: 'Advanced' },
+  ],
+  Frontend: [
+    { name: 'Redux', image: '/images/skills/icn-redux.png', level: 'Intermediate' },
+  ],
 };

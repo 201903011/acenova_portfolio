@@ -3,7 +3,7 @@ import { Tooltip } from 'flowbite-react';
 import { projects } from '@/data/projects';
 import { FaAndroid, FaChrome, FaAppStoreIos } from 'react-icons/fa';
 
-export default function ProjectDetailsPage({ params }: { params: { id: string } }) {
+export default async function ProjectDetailsPage({ params }: { params: { id: string } }) {
     const projectId = parseInt(params.id, 10);
     const project = projects.find((p) => p.id === projectId);
 

@@ -24,12 +24,14 @@ export default function ProjectPage() {
                         >
                             <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                                 <img
-                                    className="object-cover w-full rounded-lg shadow-lg dark:hidden"
+                                    className="object-cover rounded-lg shadow-lg dark:hidden"
+                                    style={{ width: "320px", height: "256px" }}
                                     src={project.imageLight}
                                     alt={project.title}
                                 />
                                 <img
-                                    className="object-cover w-full rounded-lg shadow-lg dark:block hidden"
+                                    className="object-cover rounded-lg shadow-lg dark:block hidden"
+                                    style={{ width: "320px", height: "256px" }}
                                     src={project.imageDark}
                                     alt={project.title}
                                 />
@@ -43,7 +45,7 @@ export default function ProjectPage() {
                                         {project.title}
                                     </h3>
                                     <Link
-                                        href={`/project/${index + 1}`} // Dynamic link to project details
+                                        href={`/projects/${index + 1}`} // Dynamic link to project details
                                         title={project.title}
                                         className="inline-flex items-center text-lg font-medium text-primary-600 hover:underline dark:text-primary-500"
                                     >
@@ -76,7 +78,7 @@ export default function ProjectPage() {
                                 </div>
                                 <Link href={`/projects/${project.id}`}>
                                     <Button className="mt-4" >
-                                        View case study
+                                        View Project
                                     </Button>
                                 </Link>
                             </div>

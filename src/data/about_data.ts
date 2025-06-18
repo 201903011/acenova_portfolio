@@ -5,14 +5,14 @@ export const aboutData = {
         icon: "FaUser",
         title: "My Journey",
         content: "Over the years, I have honed my skills in various domains, constantly learning and adapting to new challenges and opportunities.",
-        buttonText: "Learn More",
-        buttonLink: "#"
+        buttonText: "My Skills",
+        buttonLink: "/skills"
     },
     expertise: {
         icon: "FaTools",
         title: "My Expertise",
         content: "I specialize in areas such as software development, problem-solving, and creating innovative solutions to complex challenges.",
-        buttonText: "View Details",
-        buttonLink: "#"
+        buttonText: "My Experience",
+        buttonLink: "/experience"
     }
 };
