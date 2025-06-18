@@ -23,14 +23,14 @@ export default async function ProjectDetailsPage({ params }: { params: { id: str
                     </p>
 
                 </div>
-                <div className="mt-12">
+                <div className="mt-12 flex justify-center">
                     <img
-                        className="object-cover w-32 h-32 rounded-lg shadow-lg dark:hidden"
+                        className="object-cover w-full max-w-2xl h-64 rounded-xl shadow-lg dark:hidden"
                         src={project.imageLight}
                         alt={project.title}
                     />
                     <img
-                        className="object-cover w-32 h-32 rounded-lg shadow-lg dark:block hidden"
+                        className="object-cover w-full max-w-2xl h-64 rounded-xl shadow-lg dark:block hidden"
                         src={project.imageDark}
                         alt={project.title}
                     />
@@ -52,19 +52,22 @@ export default async function ProjectDetailsPage({ params }: { params: { id: str
                 <div className="mt-8">
                     <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Available On</h3>
                     <div className="flex items-center gap-4 mt-4">
-                        {project.platformLinks.map((platform, index) => (
+                        {project.platformLinks.map((platform, index) => {
+                            const Icon = platform.icon;
+                            return (
                             <a
                                 key={index}
                                 href={platform.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="hover:scale-110 transition-transform"
+                                className="hover:scale-110 transition-transform "
                                 title={`Open ${platform.name}`}
                             >
-                                {/* {platform.icon} */}
-                                aa
+                               {Icon && typeof Icon === "function" ? <Icon className='w-10 h-10'/> : null}
+
                             </a>
-                        ))}
+                        );
+                        })}
                     </div>
                 </div>
                 <div className="mt-12">

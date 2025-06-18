@@ -15,13 +15,18 @@ const Navigation: FC = function () {
             <Navbar fluid>
                 <Navbar.Brand href="/">
                     <img
-                        src="https://flowbite.com/docs/images/logo.svg"
-                        className="mr-3 h-6 sm:h-9"
-                        alt="Flowbite Logo"
+                        src="/svg/logobig.svg"
+                        className="mr-3 h-6 sm:h-9 dark:hidden"
+                        alt="Acenova Logo"
                     />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                    <img
+                        src="/svg/logobigdark.svg"
+                        className="mr-3 h-6 sm:h-9 dark:block hidden"
+                        alt="Acenova Logo"
+                    />
+                    {/* <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
                         AceNova Portfolio
-                    </span>
+                    </span> */}
                 </Navbar.Brand>
                 <div className="flex items-center gap-3 lg:order-2">
                     <DarkThemeToggle />
