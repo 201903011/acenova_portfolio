@@ -5,15 +5,18 @@ export const projects = [
     id: 0,
     title: "Multi Disaster Recovery Project",
     description:
-      "This project implements a multi-cloud disaster recovery solution where the application runs primarily on AWS and automatically fails over to Azure during outages. AWS Route 53 handles DNS-level failover using health checks to ensure high availability. Infrastructure is provisioned using Terraform, configured with Ansible, and deployed via Jenkins for full automation. This setup ensures minimal downtime, uninterrupted service, and robust disaster recovery across both cloud platforms.",
+      "This project enables automatic failover from AWS to Azure using Route 53 health checks, Terraform, Ansible, and Jenkins, ensuring high availability and disaster recovery across both clouds.",
     link: "",
     imageLight: "/images/projects/projects-cloud-capstone.png",
     imageDark: "/images/projects/projects-cloud-capstone.png",
     startDate: "July 2024",
     endDate: "Jan 2025",
     technologies: [
-      { name: "Express.js", icon: "/images/skills/icn-express-js.png" },
-      { name: "Go", icon: "/images/skills/icn-go.png" },
+      { name: "AWS", icon: "/images/skills/icn-aws.png" },
+      { name: "Azure", icon: "/images/skills/icn-azure.png" },
+      { name: "Terraform", icon: "/images/skills/icn-terraform.png" },
+      { name: "Ansible", icon: "/images/skills/icn-ansible.png" },
+      { name: "Jenkins", icon: "/images/skills/icn-jenkins.png" },
     ],
     platformLinks: [
       {
@@ -42,7 +45,8 @@ export const projects = [
     endDate: "Jan 2025",
     technologies: [
       { name: "Express.js", icon: "/images/skills/icn-express-js.png" },
-      { name: "Go", icon: "/images/skills/icn-go.png" },
+      { name: "Aws", icon: "/images/skills/icn-aws.png" },
+      { name: "Flutter", icon: "/images/skills/icn-flutter.png" },
     ],
     platformLinks: [
       {
@@ -70,8 +74,10 @@ export const projects = [
     startDate: "July 2024",
     endDate: "Jan 2025",
     technologies: [
-      { name: "Express.js", icon: "/images/skills/icn-express-js.png" },
       { name: "Go", icon: "/images/skills/icn-go.png" },
+      { name: "Flutter", icon: "/images/skills/icn-flutter.png" },
+      { name: "Android", icon: "/images/skills/icn-android.png" },
+      { name: "Aws", icon: "/images/skills/icn-aws.png" },
     ],
     platformLinks: [
       {
